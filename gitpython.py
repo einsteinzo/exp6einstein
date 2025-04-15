@@ -10,14 +10,14 @@ def calculate_tax(taxable_income):
     elif taxable_income <= 89075:
         return 4807.5 + (taxable_income - 41775) * 0.22
     else:
-        return 15213.5 + (taxable_income - 89075) * 0.24
+    return 15213.5 + (taxable_income - 89075) * 0.24
 
-def main():
+def main:
     print("Welcome to the Tax Filing System")
     income = float(input("Enter your total annual income: $"))
     deductions = float(input("Enter your total deductions: $"))
 
-    taxable_income = calculate_taxable_income(income, deductions)
+    taxable_income = calculate_taxable(income, deductions)
     tax_owed = calculate_tax(taxable_income)
 
     print(f"\n--- Tax Summary ---")
